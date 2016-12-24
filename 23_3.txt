@@ -1,0 +1,23 @@
+#include <conio.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	int a[100][100];
+	float n;
+	int max,x,y;
+	printf ("\n Enter number 29.86: ");
+	scanf("%f",&n);
+
+	// Initial array
+	
+	for (int i=1;i<20;i++){
+		printf("%i ounce =%0.2f gram\n",i,i*n);
+	}
+
+		
+	
+	getch();
+	return 0;
+}  
