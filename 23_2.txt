@@ -1,0 +1,39 @@
+#include <conio.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	int a[100][100];
+	int n;
+	int max,x,y;
+	printf ("\n Enter size of array: ");
+	scanf("%i",&n);
+
+	// Initial array
+	
+	for (int i=0;i<n;i++){
+		for (int j=0;j<n;j++){
+		a[i][j]=rand()%100-50;
+		printf("a[%i][%i]=%i ",i,j,a[i][j]);
+		}
+		printf("\n");
+	}
+	
+	
+	// Operation 
+    max=a[0][0];
+	for (int i=0;i<n;i++){
+	    for (int j=0;j<n;j++){
+	    if (a[i][j]>max) { max=a[i][j]; x=i;y=j; }
+		} 
+	}
+	
+	// Operated array 
+	
+		printf("\n Maximum element in two-dimensional array is a[%i][%i]=%i",x,y,a[x][y]);
+		
+	
+	getch();
+	return 0;
+}  
